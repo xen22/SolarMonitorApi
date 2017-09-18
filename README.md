@@ -22,7 +22,7 @@
 
 ## Introduction
 
-The SolarMonitorApi application forms part of the [Solar Monitor Project](#solar-monitor-project).
+The SolarMonitorApi application forms part of the [Solar Monitor Project](<https://github.com/xen22/SolarMonitor.git>).
 
 The main purpose of the SolarMonitorApi is to persist solar measurements from various solar sites and to make this information available to different types of clients (web currently and mobile in the future) via a flexible RESTful API.
 
@@ -42,36 +42,6 @@ Note: this project has been developed with VS Code. The solution may also work i
 3. Run tests: `dotnet test` (in a folder containing a test project)
 
 More detailed notes about the different developer tools and commands can be found [here](DEVEL.md).
-
-## Solar Monitor Project
-
-The Solar Monitor project came out of the need to monitor a real off-grid solar system.
-
-The main requirements of the system were:
-
-- allow remote monitoring
-- monitor the state of the battery to ensure it does not drop below a certain safe level to maximise its lifespan
-- monitor the power used by different home appliances and identify inefficient uses of power
-- determine how much energy is produced and consumed each day
-- provide historical information to gain an understanding of energy consumption patterns
-
-Monitoring the state of charge of the battery was a critical requirement as the battery bank I have installed uses a Sealed Lead Acid (AGM) technology, which is very sensitive to deep discharges.
-
-In order to suport remote monitoring (and given the patchy Internet at my location), the main part of the system (the SolarMonitorApi) was hosted in a cloud provider (Linode).
-
-## Overall system
-
-The diagram below shows an overview of the entire system:
-
-![Overall system](doc/OverallSystem.png)
-
-There are 3 major components that form part of the system:
-
-1. The SolarMonitorApi (part of this repository). This is an ASP.NET Core Web.Api-based application, hosted in the cloud, which allows remote web clients to pull data related to the various solar systems registered with it.
-
-2. The SolarMonitorGateway application. This runs on the individual gateway machines that are installed locally next to the solar systems. Its purpose is to communicate with the individual solar devices and sensors in order to retrieve information from them and push this data to the SolarMonitorApi server. This application was written in Go.
-
-3. SolarMonitorWebClient application. This is an SPA (ReactJS) that obtains data from the SolarMonitorApi and displays it to the user via a selection of graphs.
 
 ## SolarMonitorApi Architecture
 
