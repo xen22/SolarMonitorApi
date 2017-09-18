@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  webapi:
+    build: ./docker-webapi-base
+    image: solarmonitor/webapi-0.2.0.27
+    ports:
+      - "5000:80"
+  db:
+    image: mysql
+

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../Infrastructure/project_targets/netstandard2.targets" />
+    <Import Project="../../project_targets/solarmonitor.targets" />
+
+    <ItemGroup>
+        <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+        <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../SolarMonitor.Data.Models/SolarMonitor.Data.Models.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+<Project>
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        
+        <!-- <OutputPath>../../build/$(MSBuildProjectName)/bin/$(Configuration)</OutputPath>
+        <DocumentationFile>../../build/$(MSBuildProjectName)/bin/$(Configuration)/$(MSBuildProjectName).xml</DocumentationFile>
+        <BaseIntermediateOutputPath>../../build/$(MSBuildProjectName)/obj</BaseIntermediateOutputPath> -->
+    </PropertyGroup>
+
+</Project>

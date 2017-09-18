@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../Infrastructure/project_targets/netstandard2.targets" />
+    <Import Project="../../project_targets/solarmonitor.targets" />
+
+    <ItemGroup>
+        <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.0" />
+        <PackageReference Include="System.Collections" Version="4.3.0" />
+        <PackageReference Include="System.Text.Encodings.Web" Version="4.3.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    </ItemGroup>
+
+</Project>

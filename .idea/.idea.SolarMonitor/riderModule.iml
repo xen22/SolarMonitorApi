@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/.nuget/packages/sqlitepclraw.lib.e_sqlite3.linux/1.1.3/runtimes/linux-x64/native/libe_sqlite3.so">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/sqlitepclraw.lib.e_sqlite3.linux/1.1.3/runtimes/linux-x64/native/libe_sqlite3.so" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0-beta5-build1225/build/netcoreapp1.0/xunit.runner.reporters.dotnet.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0-beta5-build1225/build/netcoreapp1.0/xunit.runner.reporters.dotnet.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0-beta5-build1225/build/netcoreapp1.0/xunit.runner.utility.dotnet.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0-beta5-build1225/build/netcoreapp1.0/xunit.runner.utility.dotnet.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0-beta5-build1225/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0-beta5-build1225/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.reporters.netstandard15.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.reporters.netstandard15.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.utility.netstandard15.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.utility.netstandard15.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta3-build3705/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta3-build3705/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta3-build3705/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta3-build3705/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta3-build3705/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta3-build3705/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Common/obj/Debug/netstandard2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data/obj/Debug/netstandard2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Adapters/obj/Debug/netstandard2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Adapters.Impl/obj/Debug/netstandard2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Impl/obj/Debug/netstandard2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Models/obj/Debug/netstandard2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.RestResources/obj/Debug/netstandard2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Web.Api/obj/Debug/netcoreapp2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Data.Adapters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Data.Adapters.Impl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Data.Impl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Data.Models" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Data.RestResources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/SolarMonitor.Web.Api" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/integration/SolarMonitor.Web.Api.IntegrationTests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/integration/TestHostIntegrationTests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Common.UnitTests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Data.Adapters.UnitTests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Data.UnitTests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Simulator.UnitTests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Web.Api.UnitTests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../tools/SolarMonitor.Simulator" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Common/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Common/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Adapters.Impl/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Adapters.Impl/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Adapters/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Adapters/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Impl/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Impl/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Models/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.Models/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.RestResources/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data.RestResources/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Data/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Web.Api/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build/SolarMonitor.Web.Api/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../packages" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/integration/SolarMonitor.Web.Api.IntegrationTests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/integration/SolarMonitor.Web.Api.IntegrationTests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/integration/TestHostIntegrationTests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/integration/TestHostIntegrationTests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Common.UnitTests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Common.UnitTests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Data.Adapters.UnitTests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Data.Adapters.UnitTests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Data.UnitTests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Data.UnitTests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Simulator.UnitTests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Simulator.UnitTests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Web.Api.UnitTests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../test/unit/SolarMonitor.Web.Api.UnitTests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../tools/SolarMonitor.Simulator/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../tools/SolarMonitor.Simulator/obj" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

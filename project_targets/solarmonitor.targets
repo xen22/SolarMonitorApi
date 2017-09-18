@@ -1,0 +1,9 @@
+<Project>
+
+    <PropertyGroup>
+        <Version>1.0.0.1</Version>
+        <Authors>Ciprian Toader</Authors>
+        <NoWarn>1591;1701;1702</NoWarn>
+    </PropertyGroup>
+
+</Project>

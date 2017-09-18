@@ -1,0 +1,162 @@
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.834, 60264816514124, vstest.console.dll, Using .Net Framework version:.NETCoreApp,Version=v2.0
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.866, 60264847117969, vstest.console.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.868, 60264848325235, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.868, 60264848990284, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolved assembly. 
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.870, 60264851120274, vstest.console.dll, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.871, 60264851910552, vstest.console.dll, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolved assembly. 
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.874, 60264855043289, vstest.console.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.875, 60264855292919, vstest.console.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.875, 60264855401307, vstest.console.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.875, 60264855500817, vstest.console.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.875, 60264855613806, vstest.console.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.900, 60264880496183, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is starting.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.901, 60264881424116, vstest.console.dll, RunTestsArgumentProcessor:Execute: Queuing Test run.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.902, 60264882294163, vstest.console.dll, TestRequestManager.RunTests: run tests started.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.908, 60264888630563, vstest.console.dll, TestPluginCache: Updating loadOnlyWellKnownExtensions from False to True.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.909, 60264889294288, vstest.console.dll, TestPluginCache: Using directories for assembly resolution '/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions'.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.909, 60264889543495, vstest.console.dll, TestPluginCache: Updated the available extensions to '/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions/Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll,/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions/Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.938, 60264918768954, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DefaultTestHostManager
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.939, 60264919551029, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.940, 60264920910610, vstest.console.dll, TestEngine: Initializing Parallel Execution as MaxCpuCount is set to: 1
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.952, 60264932425765, vstest.console.dll, TestRunRequest.ExecuteAsync: Creating test run request.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.953, 60264933535542, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.953, 60264933908994, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting run with settings:TestRunCriteria:
+   KeepAlive=False,FrequencyOfRunStatsChangeEvent=10,RunStatsChangeEventTimeout=00:00:01.5000000,TestCaseFilter=,TestExecutorLauncher=
+   Settingsxml=<?xml version="1.0" encoding="utf-16"?><RunSettings><RunConfiguration><ResultsDirectory>/home/ciprian/dev/SolarMonitor/test/integration/SolarMonitor.Web.Api.IntegrationTests/TestResults</ResultsDirectory><TargetPlatform>X86</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v2.0</TargetFrameworkVersion><TestAdaptersPaths>/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions</TestAdaptersPaths></RunConfiguration></RunSettings>
+
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.953, 60264934044131, vstest.console.dll, TestRunRequest.ExecuteAsync: Wait for the first run request is over.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:31.955, 60264935881094, vstest.console.dll, TestRunRequest.ExecuteAsync: Started.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:31.956, 60264936217168, vstest.console.dll, TestRunRequest.WaitForCompletion: Waiting with timeout -1.
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:31.956, 60264936323352, vstest.console.dll, ProxyParallelExecutionManager: Triggering test run for next source: /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:31.956, 60264937150291, vstest.console.dll, ProxyExecutionManager: Test host is non shared. Lazy initialize.
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:31.987, 60264967296116, vstest.console.dll, Listening on port : 59969
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:32.004, 60264984473986, vstest.console.dll, DotnetTestHostmanager: Full path of dotnet.exe is /usr/share/dotnet/dotnet
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:32.005, 60264985446342, vstest.console.dll, DotnetTestHostmanager: File /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.runtimeconfig.json, doesnot exist
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:32.005, 60264985727263, vstest.console.dll, DotnetTestHostmanager: Adding  --depsfile "/home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.deps.json" in args
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:32.005, 60264986029846, vstest.console.dll, AssemblyResolver: Microsoft.Extensions.DependencyModel: Resolving assembly.
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:32.006, 60264986640519, vstest.console.dll, AssemblyResolver: Microsoft.Extensions.DependencyModel: Resolved assembly. 
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:32.007, 60264987681219, vstest.console.dll, DotnetTestHostManager: Assume published test project, with test host path = /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/testhost.dll.
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:32.008, 60264988234309, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider.resources: Resolving assembly.
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:32.008, 60264988869051, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider.resources: Resolving assembly.
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:32.009, 60264989235845, vstest.console.dll, DotnetTestHostmanager: No test is available in /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll. Make sure test project has a nuget reference of package "Microsoft.NET.Test.Sdk" and framework version settings are appropriate and try again.
+TpTrace Error: 0 : 4865, 4, 2017/08/02, 12:34:32.028, 60265009145878, vstest.console.dll, ProxyExecutionManager.StartTestRun: Failed to start test run: System.IO.FileNotFoundException: No test is available in /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll. Make sure test project has a nuget reference of package "Microsoft.NET.Test.Sdk" and framework version settings are appropriate and try again.
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager.GetTestHostProcessStartInfo(IEnumerable`1 sources, IDictionary`2 environmentVariables, TestRunnerConnectionInfo connectionInfo)
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(IEnumerable`1 sources)
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyExecutionManager.StartTestRun(TestRunCriteria testRunCriteria, ITestRunEventsHandler eventHandler)
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:32.137, 60265118014331, vstest.console.dll, TestRunRequest:SendTestRunMessage: Starting.
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:32.143, 60265124172730, vstest.console.dll, TestRunRequest:SendTestRunMessage: Completed.
+TpTrace Verbose: 0 : 4865, 4, 2017/08/02, 12:34:33.049, 60266029313436, vstest.console.dll, TestRunRequest:TestRunComplete: Starting. IsAborted:False IsCanceled:False.
+TpTrace Information: 0 : 4865, 4, 2017/08/02, 12:34:33.051, 60266031488004, vstest.console.dll, TestRunRequest:TestRunComplete: Completed.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:33.051, 60266032155591, vstest.console.dll, TestRunRequest.Dispose: Starting.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:33.052, 60266032384097, vstest.console.dll, TestRunRequest.Dispose: Completed.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:33.052, 60266032560684, vstest.console.dll, TestRequestManager.RunTests: run tests completed, sucessful: True.
+TpTrace Information: 0 : 4865, 2, 2017/08/02, 12:34:33.052, 60266032687244, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is completed.
+TpTrace Verbose: 0 : 4865, 2, 2017/08/02, 12:34:33.052, 60266032813342, vstest.console.dll, Executor.Execute: Exiting with exit code of 1
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.822, 60464805607549, vstest.console.dll, Using .Net Framework version:.NETCoreApp,Version=v2.0
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.866, 60464846558505, vstest.console.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.867, 60464847912291, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.868, 60464848747076, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolved assembly. 
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.871, 60464851558942, vstest.console.dll, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.872, 60464852296806, vstest.console.dll, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolved assembly. 
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.874, 60464854352081, vstest.console.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.874, 60464854605753, vstest.console.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.874, 60464854725380, vstest.console.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.874, 60464854846098, vstest.console.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.874, 60464854979661, vstest.console.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.894, 60464874456276, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is starting.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.894, 60464874779441, vstest.console.dll, RunTestsArgumentProcessor:Execute: Queuing Test run.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.895, 60464875540471, vstest.console.dll, TestRequestManager.RunTests: run tests started.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.902, 60464882809447, vstest.console.dll, TestPluginCache: Updating loadOnlyWellKnownExtensions from False to True.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.903, 60464883419222, vstest.console.dll, TestPluginCache: Using directories for assembly resolution '/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions'.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.903, 60464883627015, vstest.console.dll, TestPluginCache: Updated the available extensions to '/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions/Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll,/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions/Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.924, 60464905085772, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DefaultTestHostManager
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.925, 60464905859640, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.926, 60464907049258, vstest.console.dll, TestEngine: Initializing Parallel Execution as MaxCpuCount is set to: 1
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.937, 60464917855111, vstest.console.dll, TestRunRequest.ExecuteAsync: Creating test run request.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.939, 60464919330233, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.939, 60464919869599, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting run with settings:TestRunCriteria:
+   KeepAlive=False,FrequencyOfRunStatsChangeEvent=10,RunStatsChangeEventTimeout=00:00:01.5000000,TestCaseFilter=,TestExecutorLauncher=
+   Settingsxml=<?xml version="1.0" encoding="utf-16"?><RunSettings><RunConfiguration><ResultsDirectory>/home/ciprian/dev/SolarMonitor/test/integration/SolarMonitor.Web.Api.IntegrationTests/TestResults</ResultsDirectory><TargetPlatform>X86</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v2.0</TargetFrameworkVersion><TestAdaptersPaths>/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions</TestAdaptersPaths></RunConfiguration></RunSettings>
+
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.939, 60464920116304, vstest.console.dll, TestRunRequest.ExecuteAsync: Wait for the first run request is over.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:51.942, 60464922416752, vstest.console.dll, TestRunRequest.ExecuteAsync: Started.
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:51.942, 60464922683749, vstest.console.dll, ProxyParallelExecutionManager: Triggering test run for next source: /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:51.942, 60464922785047, vstest.console.dll, TestRunRequest.WaitForCompletion: Waiting with timeout -1.
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:51.943, 60464923393359, vstest.console.dll, ProxyExecutionManager: Test host is non shared. Lazy initialize.
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:51.976, 60464957184300, vstest.console.dll, Listening on port : 41869
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:51.993, 60464973194895, vstest.console.dll, DotnetTestHostmanager: Full path of dotnet.exe is /usr/share/dotnet/dotnet
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:51.994, 60464974279639, vstest.console.dll, DotnetTestHostmanager: File /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.runtimeconfig.json, doesnot exist
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:51.994, 60464974639874, vstest.console.dll, DotnetTestHostmanager: Adding  --depsfile "/home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.deps.json" in args
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:51.994, 60464975026905, vstest.console.dll, AssemblyResolver: Microsoft.Extensions.DependencyModel: Resolving assembly.
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:51.995, 60464975711794, vstest.console.dll, AssemblyResolver: Microsoft.Extensions.DependencyModel: Resolved assembly. 
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:51.996, 60464976356582, vstest.console.dll, DotnetTestHostManager: Assume published test project, with test host path = /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/testhost.dll.
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:51.996, 60464976947993, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider.resources: Resolving assembly.
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:51.997, 60464977882662, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider.resources: Resolving assembly.
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:51.998, 60464978621214, vstest.console.dll, DotnetTestHostmanager: No test is available in /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll. Make sure test project has a nuget reference of package "Microsoft.NET.Test.Sdk" and framework version settings are appropriate and try again.
+TpTrace Error: 0 : 5421, 5, 2017/08/02, 12:37:52.017, 60464998085927, vstest.console.dll, ProxyExecutionManager.StartTestRun: Failed to start test run: System.IO.FileNotFoundException: No test is available in /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll. Make sure test project has a nuget reference of package "Microsoft.NET.Test.Sdk" and framework version settings are appropriate and try again.
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager.GetTestHostProcessStartInfo(IEnumerable`1 sources, IDictionary`2 environmentVariables, TestRunnerConnectionInfo connectionInfo)
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(IEnumerable`1 sources)
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyExecutionManager.StartTestRun(TestRunCriteria testRunCriteria, ITestRunEventsHandler eventHandler)
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:52.149, 60465129792193, vstest.console.dll, TestRunRequest:SendTestRunMessage: Starting.
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:52.150, 60465130596226, vstest.console.dll, TestRunRequest:SendTestRunMessage: Completed.
+TpTrace Verbose: 0 : 5421, 5, 2017/08/02, 12:37:53.025, 60466006062485, vstest.console.dll, TestRunRequest:TestRunComplete: Starting. IsAborted:False IsCanceled:False.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:53.030, 60466010232497, vstest.console.dll, TestRunRequest.Dispose: Starting.
+TpTrace Information: 0 : 5421, 5, 2017/08/02, 12:37:53.032, 60466012262152, vstest.console.dll, TestRunRequest:TestRunComplete: Completed.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:53.032, 60466012604701, vstest.console.dll, TestRunRequest.Dispose: Completed.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:53.032, 60466012805450, vstest.console.dll, TestRequestManager.RunTests: run tests completed, sucessful: True.
+TpTrace Information: 0 : 5421, 2, 2017/08/02, 12:37:53.032, 60466012976616, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is completed.
+TpTrace Verbose: 0 : 5421, 2, 2017/08/02, 12:37:53.032, 60466013137965, vstest.console.dll, Executor.Execute: Exiting with exit code of 1
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.612, 60764594377354, vstest.console.dll, Using .Net Framework version:.NETCoreApp,Version=v2.0
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.641, 60764622119042, vstest.console.dll, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.643, 60764623436213, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.644, 60764624203233, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolved assembly. 
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.646, 60764626370612, vstest.console.dll, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.646, 60764627016934, vstest.console.dll, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolved assembly. 
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.648, 60764628891121, vstest.console.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.648, 60764629091080, vstest.console.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.649, 60764629211942, vstest.console.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.649, 60764629330148, vstest.console.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.649, 60764629458416, vstest.console.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.672, 60764652314567, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is starting.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.672, 60764653076971, vstest.console.dll, RunTestsArgumentProcessor:Execute: Queuing Test run.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.673, 60764653845359, vstest.console.dll, TestRequestManager.RunTests: run tests started.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.681, 60764662044367, vstest.console.dll, TestPluginCache: Updating loadOnlyWellKnownExtensions from False to True.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.682, 60764662681322, vstest.console.dll, TestPluginCache: Using directories for assembly resolution '/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions'.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.682, 60764662904199, vstest.console.dll, TestPluginCache: Updated the available extensions to '/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions/Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll,/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions/Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.710, 60764690635127, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DefaultTestHostManager
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.711, 60764691412340, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.712, 60764692594638, vstest.console.dll, TestEngine: Initializing Parallel Execution as MaxCpuCount is set to: 1
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.720, 60764700206609, vstest.console.dll, TestRunRequest.ExecuteAsync: Creating test run request.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.721, 60764701405590, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.721, 60764701842698, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting run with settings:TestRunCriteria:
+   KeepAlive=False,FrequencyOfRunStatsChangeEvent=10,RunStatsChangeEventTimeout=00:00:01.5000000,TestCaseFilter=,TestExecutorLauncher=
+   Settingsxml=<?xml version="1.0" encoding="utf-16"?><RunSettings><RunConfiguration><ResultsDirectory>/home/ciprian/dev/SolarMonitor/test/integration/SolarMonitor.Web.Api.IntegrationTests/TestResults</ResultsDirectory><TargetPlatform>X86</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v2.0</TargetFrameworkVersion><TestAdaptersPaths>/usr/share/dotnet/sdk/2.0.0-preview2-006497/Extensions</TestAdaptersPaths></RunConfiguration></RunSettings>
+
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.721, 60764702023613, vstest.console.dll, TestRunRequest.ExecuteAsync: Wait for the first run request is over.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:51.727, 60764707609354, vstest.console.dll, TestRunRequest.ExecuteAsync: Started.
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:51.727, 60764707903440, vstest.console.dll, ProxyParallelExecutionManager: Triggering test run for next source: /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:51.729, 60764709348842, vstest.console.dll, TestRunRequest.WaitForCompletion: Waiting with timeout -1.
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:51.729, 60764709540029, vstest.console.dll, ProxyExecutionManager: Test host is non shared. Lazy initialize.
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:51.756, 60764736655839, vstest.console.dll, Listening on port : 58643
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:51.776, 60764756517490, vstest.console.dll, DotnetTestHostmanager: Full path of dotnet.exe is /usr/share/dotnet/dotnet
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:51.777, 60764757319448, vstest.console.dll, DotnetTestHostmanager: File /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.runtimeconfig.json, doesnot exist
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:51.777, 60764757557491, vstest.console.dll, DotnetTestHostmanager: Adding  --depsfile "/home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.deps.json" in args
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:51.777, 60764757851056, vstest.console.dll, AssemblyResolver: Microsoft.Extensions.DependencyModel: Resolving assembly.
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:51.778, 60764758447272, vstest.console.dll, AssemblyResolver: Microsoft.Extensions.DependencyModel: Resolved assembly. 
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:51.778, 60764758936978, vstest.console.dll, DotnetTestHostManager: Assume published test project, with test host path = /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/testhost.dll.
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:51.779, 60764759448642, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider.resources: Resolving assembly.
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:51.780, 60764760252321, vstest.console.dll, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider.resources: Resolving assembly.
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:51.780, 60764760838128, vstest.console.dll, DotnetTestHostmanager: No test is available in /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll. Make sure test project has a nuget reference of package "Microsoft.NET.Test.Sdk" and framework version settings are appropriate and try again.
+TpTrace Error: 0 : 6267, 5, 2017/08/02, 12:42:51.804, 60764784836531, vstest.console.dll, ProxyExecutionManager.StartTestRun: Failed to start test run: System.IO.FileNotFoundException: No test is available in /home/ciprian/dev/SolarMonitor/build/test/SolarMonitor.Web.Api.IntegrationTests/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.IntegrationTests.dll. Make sure test project has a nuget reference of package "Microsoft.NET.Test.Sdk" and framework version settings are appropriate and try again.
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager.GetTestHostProcessStartInfo(IEnumerable`1 sources, IDictionary`2 environmentVariables, TestRunnerConnectionInfo connectionInfo)
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(IEnumerable`1 sources)
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyExecutionManager.StartTestRun(TestRunCriteria testRunCriteria, ITestRunEventsHandler eventHandler)
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:51.918, 60764898811198, vstest.console.dll, TestRunRequest:SendTestRunMessage: Starting.
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:51.919, 60764899498947, vstest.console.dll, TestRunRequest:SendTestRunMessage: Completed.
+TpTrace Verbose: 0 : 6267, 5, 2017/08/02, 12:42:52.743, 60765723879496, vstest.console.dll, TestRunRequest:TestRunComplete: Starting. IsAborted:False IsCanceled:False.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:52.746, 60765726751540, vstest.console.dll, TestRunRequest.Dispose: Starting.
+TpTrace Information: 0 : 6267, 5, 2017/08/02, 12:42:52.747, 60765727456478, vstest.console.dll, TestRunRequest:TestRunComplete: Completed.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:52.747, 60765727832287, vstest.console.dll, TestRunRequest.Dispose: Completed.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:52.747, 60765727957718, vstest.console.dll, TestRequestManager.RunTests: run tests completed, sucessful: True.
+TpTrace Information: 0 : 6267, 2, 2017/08/02, 12:42:52.747, 60765728128529, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is completed.
+TpTrace Verbose: 0 : 6267, 2, 2017/08/02, 12:42:52.748, 60765728272063, vstest.console.dll, Executor.Execute: Exiting with exit code of 1

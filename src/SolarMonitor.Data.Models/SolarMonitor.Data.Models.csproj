@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../Infrastructure/project_targets/netstandard2.targets" />
+    <Import Project="../../project_targets/solarmonitor.targets" />
+
+    <ItemGroup>
+        <ProjectReference Include="../SolarMonitor.Data.CommonTypes/SolarMonitor.Data.CommonTypes.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.0" />
+        <PackageReference Include="System.Collections" Version="4.3.0" />
+    </ItemGroup>
+
+</Project>

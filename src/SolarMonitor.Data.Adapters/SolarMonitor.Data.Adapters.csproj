@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../Infrastructure/project_targets/netstandard2.targets" />
+    <Import Project="../../project_targets/solarmonitor.targets" />
+
+    <ItemGroup>
+        <ProjectReference Include="../SolarMonitor.Data.Models/SolarMonitor.Data.Models.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.RestResources/SolarMonitor.Data.RestResources.csproj" />
+    </ItemGroup>
+
+</Project>

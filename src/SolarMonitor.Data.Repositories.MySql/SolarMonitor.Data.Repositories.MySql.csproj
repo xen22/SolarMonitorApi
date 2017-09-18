@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../Infrastructure/project_targets/netstandard2.targets" />
+    <Import Project="../../project_targets/solarmonitor.targets" />
+
+    <ItemGroup>
+        <ProjectReference Include="../SolarMonitor.Data.Repositories/SolarMonitor.Data.Repositories.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.Models/SolarMonitor.Data.Models.csproj" />
+        <ProjectReference Include="../../../Common/src/AD.Common/AD.Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- The following packages are needed by Pomelo because we're using an older version -->
+        <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
+        <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+        <PackageReference Include="System.Net.Sockets" Version="4.3.0" />
+        <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
+        <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
+
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.0.0" />
+
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.0" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.0-rtm-10057" />
+
+        <!-- Note: Sapient provider does not support generating SQL script from migrations, which is an essential requirement for us. -->
+        <!-- <PackageReference Include="SapientGuardian.EntityFrameworkCore.MySql" Version="7.1.23" /> -->
+        <PackageReference Include="Serilog" Version="2.5.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="3.0.0" />
+        <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.0">
+            <PrivateAssets>All</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <!-- UserSecretsId is needed for the secret manager -->
+    <PropertyGroup>
+        <UserSecretsId>SolarMonitorSecrets</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+        <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />    
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+<Project>
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+
+        <!-- <OutputPath>../../../build/test/$(MSBuildProjectName)/bin/$(Configuration)</OutputPath>
+        <DocumentationFile>../../../build/test/$(MSBuildProjectName)/bin/$(Configuration)/spec.xml</DocumentationFile>
+        <BaseIntermediateOutputPath>../../../build/test/$(MSBuildProjectName)/obj</BaseIntermediateOutputPath>  -->
+
+        <EnableDefaultContentItems>false</EnableDefaultContentItems>
+        <PreserveCompilationContext>true</PreserveCompilationContext>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="*.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+</Project>

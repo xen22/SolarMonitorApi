@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <deployment>
+        <add key="branch" value="rel-0.2.0" />
+    </deployment>
+</settings>

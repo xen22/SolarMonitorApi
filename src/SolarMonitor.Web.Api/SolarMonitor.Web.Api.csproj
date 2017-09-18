@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <Import Project="../../../Infrastructure/project_targets/netcoreapp2.targets" />
+    <Import Project="../../project_targets/solarmonitor.targets" />
+
+    <ItemGroup>
+        <Content Include="wwwroot/**">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Update="wwwroot;Views;appsettings.json;web.config">
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../../Common/src/AD.Common/AD.Common.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.Repositories/SolarMonitor.Data.Repositories.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.CommonTypes/SolarMonitor.Data.CommonTypes.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.Repositories.MySql/SolarMonitor.Data.Repositories.MySql.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.Models/SolarMonitor.Data.Models.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.RestResources/SolarMonitor.Data.RestResources.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.Adapters/SolarMonitor.Data.Adapters.csproj" />
+        <ProjectReference Include="../SolarMonitor.Data.Adapters.AutoMapper/SolarMonitor.Data.Adapters.AutoMapper.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- <PackageReference Include="Lohmann.HALight" Version="0.2.0-rc2" /> -->
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+        <PackageReference Include="Serilog" Version="2.5.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="3.0.0" />
+        <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.0">
+            <PrivateAssets>All</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="RestApiHelpers" Version="1.6.0" />
+    </ItemGroup>
+
+    <!-- UserSecretsId is needed for the secret manager -->
+    <PropertyGroup>
+        <UserSecretsId>SolarMonitorSecrets</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+        <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />    
+        <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,56 @@
+// Format:
+// { "command": "myCommand"
+//   "args": ["myCommandArguments"],
+//   "tasks" : [ 
+//     { "taskName": "myTask",
+//       "args": ["myTaskArguments"],
+//       "suppressTaskName": false,
+//     }
+//   ]
+// }
+//
+// The above will result in the following command:
+//   myCommand myCommandArguments myTaskArguments myTask
+// The task name myTask is always last and can be omitted 
+// with "suppressTaskName": true.
+// 
+// (From: http://stackoverflow.com/a/30419250)
+//
+// Note: VSCode tasks only support running through a single
+//       hence the need to scripts/run_task.sh wrapper around the shell.  
+
+{
+  "version": "0.1.0",
+  "command": "${workspaceRoot}/scripts/run_task.sh",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "echoCommand": true,
+  "tasks": [
+    {
+      "taskName": "build",
+      "args": [ "./scripts/build_all.sh" ],
+      "isBuildCommand": true,
+      "isTestCommand": false,
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "taskName": "doc",
+      "args": [ "./scripts/generate_docs.sh" ],
+      "isBuildCommand": true,
+      "isTestCommand": false
+    },
+    {
+      "taskName": "test-unit",
+      "args": [ "./scripts/run_unit_tests.sh" ],
+      "isBuildCommand": false,
+      "isTestCommand": true
+    },
+    {
+      "taskName": "test_integration",
+      "args": [ "./build/run_integration_tests.sh" ],
+      "isBuildCommand": false,
+      "isTestCommand": true
+    }
+  ]
+}

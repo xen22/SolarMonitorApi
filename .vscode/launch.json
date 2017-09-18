@@ -1,0 +1,130 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+      "name": "SolarMonitor Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      //"preLaunchTask": "build",
+      "program": "${workspaceRoot}/src/SolarMonitor.Web.Api/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.dll",
+      "args": [],
+      "cwd": "${workspaceRoot}/src/SolarMonitor.Web.Api/bin/Debug/netcoreapp2.0",
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    {
+      "name": "SolarMonitor Launch (web)",
+      "type": "coreclr",
+      "request": "launch",
+      // "dotnet build" is very slow even after the solution is fully built, so disable this for now.
+      // "preLaunchTask": "build",
+      "program": "${workspaceRoot}/src/SolarMonitor.Web.Api/bin/Debug/netcoreapp2.0/SolarMonitor.Web.Api.dll",
+      "args": [],
+      "cwd": "${workspaceRoot}/src/SolarMonitor.Web.Api/bin/Debug/netcoreapp2.0",
+      "stopAtEntry": false,
+      "launchBrowser": {
+        "enabled": true,
+        "args": "${auto-detect-url}",
+        "windows": {
+          "command": "cmd.exe",
+          "args": "/C start ${auto-detect-url}"
+        },
+        "osx": {
+          "command": "open"
+        },
+        "linux": {
+          "command": "xdg-open",
+          //"command": "google-chrome",
+          "args": "${auto-detect-url}/swagger"
+        }
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://*:5099"
+      }
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": 0
+    },
+
+    {
+      "name": "Debug unit tests (Web.Api)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "/usr/bin/dotnet",
+      "args": [
+        "exec",
+        "--runtimeconfig",
+        "${workspaceRoot}/test/unit/SolarMonitor.Web.Api.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Web.Api.UnitTests.runtimeconfig.json",
+        "--depsfile",
+        "${workspaceRoot}/test/unit/SolarMonitor.Web.Api.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Web.Api.UnitTests.deps.json",
+        "--additionalprobingpath",
+        "/home/ciprian/.nuget/packages",
+
+        "/home/ciprian/.nuget/packages/dotnet-test-xunit/1.0.0-rc2-build10025/lib/netcoreapp1.0/dotnet-test-xunit.dll",
+        "${workspaceRoot}/test/unit/SolarMonitor.Web.Api.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Web.Api.UnitTests.dll",
+
+        "-namespace",
+        "SolarMonitorApiTest"
+      ],
+      "cwd": "${workspaceRoot}",
+      "stopAtEntry": false
+    },
+
+    {
+      "name": "Debug unit tests (Simulator)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "/usr/bin/dotnet",
+      "args": [
+        "exec",
+        "--runtimeconfig",
+        "${workspaceRoot}/test/unit/SolarMonitor.Simulator.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Simulator.UnitTests.runtimeconfig.json",
+        "--depsfile",
+        "${workspaceRoot}/test/unit/SolarMonitor.Simulator.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Simulator.UnitTests.deps.json",
+        "--additionalprobingpath",
+        "/home/ciprian/.nuget/packages",
+
+        "/home/ciprian/.nuget/packages/dotnet-test-xunit/1.0.0-rc2-build10025/lib/netcoreapp1.0/dotnet-test-xunit.dll",
+        "${workspaceRoot}/test/unit/SolarMonitor.Simulator.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Simulator.UnitTests.dll",
+
+        "-namespace",
+        "SolarMonitor.Simulator.UnitTests"
+      ],
+      "cwd": "${workspaceRoot}",
+      "stopAtEntry": false
+    },
+
+    {
+      "name": "Debug unit tests (Data)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "/usr/bin/dotnet",
+      "args": [
+        "exec",
+        "--runtimeconfig",
+        "${workspaceRoot}/test/unit/SolarMonitor.Data.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Data.UnitTests.runtimeconfig.json",
+        "--depsfile",
+        "${workspaceRoot}/test/unit/SolarMonitor.Data.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Data.UnitTests.deps.json",
+        "--additionalprobingpath",
+        "/home/ciprian/.nuget/packages",
+
+        "/home/ciprian/.nuget/packages/dotnet-test-xunit/1.0.0-rc2-build10025/lib/netcoreapp1.0/dotnet-test-xunit.dll",
+        "${workspaceRoot}/test/unit/SolarMonitor.Data.UnitTests/bin/Debug/netcoreapp1.1/SolarMonitor.Data.UnitTests.dll",
+
+        "-namespace",
+        "SolarMonitor.Data.UnitTests"
+      ],
+      "cwd": "${workspaceRoot}",
+      "stopAtEntry": false
+    }
+  ]
+}
