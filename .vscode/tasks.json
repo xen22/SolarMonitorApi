@@ -3,20 +3,16 @@
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [{
-            "taskName": "build all",
+            "label": "build all",
             "command": "dotnet build",
             "type": "shell",
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
             "presentation": {
                 "reveal": "silent"
             },
             "problemMatcher": "$msCompile"
         },
         {
-            "taskName": "build api",
+            "label": "build api",
             "command": "dotnet build src/SolarMonitor.Web.Api/SolarMonitor.Web.Api.csproj",
             "type": "shell",
             "group": {
@@ -29,7 +25,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "taskName": "Run unit tests",
+            "label": "Run unit tests",
             "type": "shell",
             "command": "./scripts/run_unit_tests.sh",
             "group": "test",
@@ -40,7 +36,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "taskName": "Run integration tests",
+            "label": "Run integration tests",
             "type": "shell",
             "command": "./scripts/run_integration_tests.sh",
             "group": "test",
@@ -51,7 +47,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "taskName": "Generate docs",
+            "label": "Generate docs",
             "type": "shell",
             "command": "./scripts/generate_docs.sh",
             "group": "none",
