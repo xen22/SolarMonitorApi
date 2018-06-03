@@ -17,15 +17,17 @@ namespace SolarMonitorApi.Services
         private readonly ISiteRepository _repository;
         private readonly ISiteAdapter _siteAdapter;
 
-
         public SiteService(
             ILogger<SiteService> logger,
             ISiteRepository repository,
             ISiteAdapter siteAdapter)
         {
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
-            _siteAdapter = siteAdapter ?? throw new ArgumentNullException(nameof(siteAdapter));
+            _logger = logger ??
+                throw new ArgumentNullException(nameof(logger));
+            _repository = repository ??
+                throw new ArgumentNullException(nameof(repository));
+            _siteAdapter = siteAdapter ??
+                throw new ArgumentNullException(nameof(siteAdapter));
         }
 
         public Resources.CollectionResource<Resources.Site> Get(GetSitesRequestQuery query)
@@ -34,7 +36,7 @@ namespace SolarMonitorApi.Services
 
             var sites = _repository.Sites(
                 pageIndex: query.PageIndex ?? QueryParameterDefaults.PageIndex,
-                pageSize: query.PageSize ?? QueryParameterDefaults.PageSize
+                pageSize : query.PageSize ?? QueryParameterDefaults.PageSize
             );
 
             var siteResources = sites.Select(s => _siteAdapter.ModelToResource(s));
@@ -57,7 +59,7 @@ namespace SolarMonitorApi.Services
             return _siteAdapter.ModelToResource(site);
         }
 
-        public (string uri, Resources.Site) Create(Resources.Site site)
+        public(string uri, Resources.Site) Create(Resources.Site site)
         {
             var siteModel = _siteAdapter.ResourceToModel(site);
             var savedSite = _repository.Create(siteModel);

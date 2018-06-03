@@ -1,20 +1,19 @@
+using System;
+using System.IO;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Serilog;
-
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.PlatformAbstractions;
-using Swashbuckle.AspNetCore.Swagger;
-using Microsoft.AspNetCore.HttpOverrides;
-using SolarMonitor.Data.Repositories.MySql;
-using System;
-using System.Threading.Tasks;
-using System.IO;
-using SolarMonitorApi.Configuration;
+using Serilog;
 using SolarMonitor.Data.Adapters.AutoMapper;
+using SolarMonitor.Data.Repositories.MySql;
+using SolarMonitorApi.Configuration;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace SolarMonitorApi
 {
@@ -26,8 +25,7 @@ namespace SolarMonitorApi
         private readonly ILoggerFactory _loggerFactory;
         public IConfigurationRoot Configuration { get; }
 
-        public Startup(IHostingEnvironment env, ILoggerFactory loggerFactory)
-        : this(env)
+        public Startup(IHostingEnvironment env, ILoggerFactory loggerFactory) : this(env)
         {
             _loggerFactory = loggerFactory;
         }
@@ -44,7 +42,6 @@ namespace SolarMonitorApi
                 env.EnvironmentName, env.ContentRootPath);
         }
 
-
         /// Hook for IntegrationTests
         protected virtual void ConfigureDatabase(IServiceCollection services)
         {
@@ -54,14 +51,12 @@ namespace SolarMonitorApi
                 Configuration[dbPasswordKey]);
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                 options.UseMySql(connString, b => b.MigrationsAssembly("SolarMonitor.Web.Api")));
+                options.UseMySql(connString, b => b.MigrationsAssembly("SolarMonitor.Web.Api")));
         }
 
         /// Hook for IntegrationTests 
         protected virtual void EnsureDatabaseCreated(ApplicationDbContext dbContext)
-        {
-
-        }
+        { }
 
         /// This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -87,7 +82,7 @@ namespace SolarMonitorApi
             loggerFactory.AddConsole(Configuration.GetSection("Logging")).AddSerilog();
             loggerFactory.AddDebug().AddSerilog();
 
-            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            using(var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 var dbContext = serviceScope.ServiceProvider.GetService<ApplicationDbContext>();
                 EnsureDatabaseCreated(dbContext);

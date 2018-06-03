@@ -1,19 +1,18 @@
+using System;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System.Linq;
-
 using SolarMonitor.Data;
-using Swashbuckle.AspNetCore.SwaggerGen;
-using Microsoft.AspNetCore.Http;
 using SolarMonitorApi.RequestQueries;
 using SolarMonitorApi.Services;
 using SolarMonitorApi.Validators;
-using System;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using Resources = SolarMonitor.Data.Resources;
 using Models = SolarMonitor.Data.Models;
 using System.ComponentModel.DataAnnotations;
-using RestApiHelpers.Validation;
 using Microsoft.AspNetCore.Authorization;
+using RestApiHelpers.Validation;
 
 namespace SolarMonitorApi.Controllers
 {
@@ -25,7 +24,6 @@ namespace SolarMonitorApi.Controllers
         private readonly ILogger<SitesController> _logger;
         private readonly ISiteService _service;
 
-
         /// <summary>
         /// Constructor
         /// </summary>
@@ -35,8 +33,10 @@ namespace SolarMonitorApi.Controllers
             ILogger<SitesController> logger,
             ISiteService service)
         {
-            _logger = logger ?? throw new System.ArgumentNullException(nameof(logger));
-            _service = service ?? throw new System.ArgumentNullException(nameof(service));
+            _logger = logger ??
+                throw new System.ArgumentNullException(nameof(logger));
+            _service = service ??
+                throw new System.ArgumentNullException(nameof(service));
         }
 
         // GET api/sites/{guid}

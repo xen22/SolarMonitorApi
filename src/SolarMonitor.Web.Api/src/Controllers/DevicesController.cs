@@ -1,25 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System.Linq;
-using System;
-
 using SolarMonitor.Data;
+using SolarMonitorApi.Helpers;
+using SolarMonitorApi.RequestQueries;
+using SolarMonitorApi.Services;
 using SolarMonitorApi.Validators;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using Microsoft.AspNetCore.Http;
-using SolarMonitorApi.RequestQueries;
-using System.Collections.Generic;
-using SolarMonitorApi.Helpers;
-using SolarMonitorApi.Services;
 using Resources = SolarMonitor.Data.Resources;
 using Models = SolarMonitor.Data.Models;
-using RestApiHelpers.Validation;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
+using RestApiHelpers.Validation;
 
 namespace SolarMonitorApi.Controllers
 {
-    /// Devices controller class.
+    /// <summary>
+    /// Devices controller class. The main purpose is to handle routing.
+    /// Parameter validation is handled automatically via ValidateActionParameters attribute.
+    /// All business logic is handled by the service.
+    /// </summary>
     [Route("api/[controller]")]
     [Authorize]
     public sealed class DevicesController : Controller
@@ -27,7 +30,6 @@ namespace SolarMonitorApi.Controllers
         private readonly ILogger<DevicesController> _logger;
         private readonly IDevicesService _service;
         private readonly IDeviceTypeService _deviceTypeService;
-
 
         /// <summary>
         /// Constructor
@@ -40,9 +42,12 @@ namespace SolarMonitorApi.Controllers
             IDevicesService service,
             IDeviceTypeService deviceTypeService)
         {
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _service = service ?? throw new ArgumentNullException(nameof(service));
-            _deviceTypeService = deviceTypeService ?? throw new ArgumentNullException(nameof(deviceTypeService));
+            _logger = logger ??
+                throw new ArgumentNullException(nameof(logger));
+            _service = service ??
+                throw new ArgumentNullException(nameof(service));
+            _deviceTypeService = deviceTypeService ??
+                throw new ArgumentNullException(nameof(deviceTypeService));
         }
 
         // GET api/devices/{guid}
@@ -153,7 +158,6 @@ namespace SolarMonitorApi.Controllers
             var (uri, deviceResource) = _service.Create(device);
             return Created(uri, deviceResource);
         }
-
 
         // DELETE api/devices/{guid}
         /// <summary> Deletes a specific device by GUID </summary>

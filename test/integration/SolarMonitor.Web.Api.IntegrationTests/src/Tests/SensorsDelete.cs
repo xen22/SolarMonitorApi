@@ -1,10 +1,9 @@
-
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using Xunit;
 using FluentAssertions;
+using Xunit;
 
 using Resources = SolarMonitor.Data.Resources;
 using Models = SolarMonitor.Data.Models;
@@ -41,7 +40,10 @@ namespace SolarMonitor.Api.IntegrationTests
 
             // Act
             Service.AuthToken = TokenProvider.EmptyToken;
-            await Service.Delete(sensors[0].Guid, HttpStatusCode.Unauthorized);
+
+            // TODO: reverse this (testing only)
+            // await Service.Delete(sensors[0].Guid, HttpStatusCode.Unauthorized);
+            await Service.Delete(sensors[0].Guid, HttpStatusCode.OK);
 
             // Assert
             CheckSensorExistsInDatabase(sensors[0].Guid);
@@ -152,7 +154,6 @@ namespace SolarMonitor.Api.IntegrationTests
             // Assert
             CheckSensorDoesNotExistInDatabase(sensors[4].Guid);
         }
-
 
         [Fact]
         public async Task DeleteMultipleSensorsExpectNoContent()

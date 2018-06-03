@@ -1,21 +1,20 @@
-using SolarMonitor.Data;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System.Linq;
-using System;
-using SolarMonitorApi.Validators;
-using SolarMonitorApi.RequestQueries;
-using Swashbuckle.AspNetCore.SwaggerGen;
-using Microsoft.AspNetCore.Http;
-using System.Collections.Generic;
+using SolarMonitor.Data;
 using SolarMonitorApi.Helpers;
+using SolarMonitorApi.RequestQueries;
+using SolarMonitorApi.Validators;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using Resources = SolarMonitor.Data.Resources;
 using Models = SolarMonitor.Data.Models;
-using SolarMonitorApi.Services;
-using RestApiHelpers.Validation;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
+using RestApiHelpers.Validation;
+using SolarMonitorApi.Services;
 
 namespace SolarMonitorApi.Controllers
 {
@@ -28,7 +27,6 @@ namespace SolarMonitorApi.Controllers
         private readonly ISensorsService _service;
         private readonly ISensorTypeService _sensorTypeService;
 
-
         /// <summary>
         /// Constructor
         /// </summary>
@@ -40,9 +38,12 @@ namespace SolarMonitorApi.Controllers
             ISensorsService service,
             ISensorTypeService sensorTypeService)
         {
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _service = service ?? throw new ArgumentNullException(nameof(service));
-            _sensorTypeService = sensorTypeService ?? throw new ArgumentNullException(nameof(sensorTypeService));
+            _logger = logger ??
+                throw new ArgumentNullException(nameof(logger));
+            _service = service ??
+                throw new ArgumentNullException(nameof(service));
+            _sensorTypeService = sensorTypeService ??
+                throw new ArgumentNullException(nameof(sensorTypeService));
         }
 
         // GET api/sensors/{guid}
@@ -88,7 +89,7 @@ namespace SolarMonitorApi.Controllers
         [SwaggerResponse(StatusCodes.Status400BadRequest, Description = "Invalid query parameters")]
         [HttpGet]
         [ValidateActionParameters, ReturnBadRequestOnModelError]
-        public IActionResult Get([FromQuery]GetSensorsRequestQuery query)
+        public IActionResult Get([FromQuery] GetSensorsRequestQuery query)
         {
             var sensors = _service.Get(query);
             if (sensors?.TotalCount == 0)
