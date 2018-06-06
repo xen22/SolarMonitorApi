@@ -1,9 +1,9 @@
-using System.IO;
-using Microsoft.AspNetCore.Hosting;
 using System;
-using SolarMonitorApi.Configuration;
+using System.IO;
 using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using SolarMonitorApi.Configuration;
 
 namespace SolarMonitorApi
 {
@@ -21,7 +21,7 @@ namespace SolarMonitorApi
             // TODO: move password to a secrets file
             string pfxPwd = envName == "Development" ? config["PfxCertificatePassword"] : "";
 
-            BuildWebHost(args, config).Run();
+            CreateWebHostBuilder(args, config).Build().Run();
 
             // Old code (from ASP.NET Core 1.1, not needed in 2.0)
             // var host = new WebHostBuilder()
@@ -48,11 +48,10 @@ namespace SolarMonitorApi
             // host.Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args, IConfigurationRoot config) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args, IConfigurationRoot config) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseConfiguration(config)
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .Build();
+            .UseStartup<Startup>()
+            .UseConfiguration(config)
+            .UseContentRoot(Directory.GetCurrentDirectory());
     }
 }

@@ -19,18 +19,22 @@ namespace SolarMonitorApi.Configuration
         }
 
         public static IApplicationBuilder UseDevelopmentOptions(
-            this IApplicationBuilder app,
-            IHostingEnvironment env)
+            this IApplicationBuilder app)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+            return app
+                .UseDeveloperExceptionPage()
+                .UseDatabaseErrorPage()
                 // Allow CORS in development so that we can test with web client running on a different domain
                 // (including localhost with a different port)
-                app.UseCors("AllowAllOrigins");
-            }
-            return app;
+                .UseCors("AllowAllOrigins");
+        }
+
+        public static IApplicationBuilder UseProductionOptions(
+            this IApplicationBuilder app)
+        {
+            return app
+                .UseExceptionHandler("/Error")
+                .UseHsts();
         }
 
         public static IApplicationBuilder UseCustomisedSwagger(this IApplicationBuilder app, IConfiguration config)
@@ -44,7 +48,6 @@ namespace SolarMonitorApi.Configuration
             });
             return app;
         }
-
 
     }
 }

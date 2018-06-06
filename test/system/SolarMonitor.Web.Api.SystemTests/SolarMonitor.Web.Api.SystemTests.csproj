@@ -12,10 +12,10 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
     <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="Microsoft.DotNet.InternalAbstractions" Version="1.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.1.0" />
     <PackageReference Include="System.Threading" Version="4.3.0" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>

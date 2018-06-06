@@ -55,8 +55,7 @@ namespace SolarMonitorApi
         }
 
         /// Hook for IntegrationTests 
-        protected virtual void EnsureDatabaseCreated(ApplicationDbContext dbContext)
-        { }
+        protected virtual void EnsureDatabaseCreated(ApplicationDbContext dbContext) { }
 
         /// This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -88,9 +87,18 @@ namespace SolarMonitorApi
                 EnsureDatabaseCreated(dbContext);
             }
 
+            if (env.IsDevelopment())
+            {
+                app.UseDevelopmentOptions();
+            }
+            else
+            {
+                app.UseProductionOptions();
+            }
+
             app
-                .UseDevelopmentOptions(env)
                 .UseNginx()
+                .UseHttpsRedirection()
                 .UseStaticFiles()
                 // Note:  BasicAuthentication middleware must come before the built-in 
                 // Authentication (which uses JWT tokens)

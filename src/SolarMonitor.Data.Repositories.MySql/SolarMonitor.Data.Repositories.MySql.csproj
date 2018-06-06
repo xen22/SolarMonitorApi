@@ -17,12 +17,12 @@
         <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
         <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
 
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.1.0" />
 
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.0" />
-        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.0-rtm-10057" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.0" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.0" />
 
         <!-- Note: Sapient provider does not support generating SQL script from migrations, which is an essential requirement for us. -->
         <!-- <PackageReference Include="SapientGuardian.EntityFrameworkCore.MySql" Version="7.1.23" /> -->
